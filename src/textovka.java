@@ -114,6 +114,7 @@ public static void prozkoumej(String cl){
 	      case "pus": napisl("Stará lovecka brokovnice, sestnactka. Je trochu orezla, pokud obet nezabijou broky, dorazi ji tetanus. V hlavnich jsou naboje uzavrene voskem, asi domaci vyroba.");break;
 	      case "kli": napisl("Klic od kulny - tvoje propustka na svobodu!");break;
 	      case "kla": napisl("Kladivo - neporadna, ale ucinna zbran proti hrebikum");
+	      case "buc": napisl("Buchar - kde kladivo nestaci..");
 		}
 	}
 	else {napisl("Nic takoveho nevidis.");
