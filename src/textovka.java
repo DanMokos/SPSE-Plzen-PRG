@@ -16,7 +16,7 @@ public class textovka {
 	
 	// 1 - lokace, 2 - jde sebrat (0/1)
 	static int[][] itemy = new int[][]{{1,0},{-1,1},{1,0},{3,0},{-1,1},{3,0},{4,1},{-1,1}};
-	static String[] texty = {"Podle vseho jsi u sebe v inventari, jaks to dokázal?",
+	static String[] texty = {"Podle vseho jsi u sebe v inventari, jaks to dokÃ¡zal?",
 			"Jsi ve stare kulne. Je tu tma, prach a pavuciny, v rohu stoji stare kolo z kolobezky. Na sever vedou dvere.",
 			"Stojis na malem rozbahnenem placku, na jih je kulna, kdes byl zavreny. Na sever jsou vrata a za nimi nekdo stoji, ale jeste te nevidel. Na zapade stoji u dilny stary ponk.",
 			"Stojis u stareho ponku pred vybrakovanou dilnou. Na vychod je placek pred kulnou, na sever je zminovana dilna.",
@@ -111,10 +111,9 @@ public static void prozkoumej(String cl){
 	      case "sve": napisl("Stary sverak, pripevneny k ponku. Je pekne zadelanej, jako by do nej nekdo nekomu zavrel ruku.");break;
 	      case "pak" : napisl("Improvizovany paklic z dratu z kola. Snad bude k necemu.");break;
 	      case "dvi": napisl(texty[7]);break;
-	      case "pus": napisl("Stará lovecka brokovnice, sestnactka. Je trochu orezla, pokud obet nezabijou broky, dorazi ji tetanus. V hlavnich jsou naboje uzavrene voskem, asi domaci vyroba.");break;
+	      case "pus": napisl("StarÃ¡ lovecka brokovnice, sestnactka. Je trochu orezla, pokud obet nezabijou broky, dorazi ji tetanus. V hlavnich jsou naboje uzavrene voskem, asi domaci vyroba.");break;
 	      case "kli": napisl("Klic od kulny - tvoje propustka na svobodu!");break;
-	      case "kla": napisl("Kladivo - neporadna, ale ucinna zbran proti hrebikum");
-	      case "buc": napisl("Buchar - kde kladivo nestaci..");
+              case "kle": napisl("Klec - k niÄemu?");break;
 		}
 	}
 	else {napisl("Nic takoveho nevidis.");
@@ -208,7 +207,7 @@ public static void situace(){
 			 { 	napisl("Jdes na "+cl2[0].substring(0, 1)+".");
 			 	kdeJsem=lokace[kdeJsem][poleObsahuje(smery, cl2[0])];
 			 	situace();}
-		else {napisl("Tudy nemùžeš");} } else
+		else {napisl("Tudy nemÅ¯ÂžeÂš");} } else
 		if (cl2[0].equals("sit")||cl2[0].equals("lok")) {situace();} else
 		if (cl2[0].equals("inv")) {inventar();} else
 		if (cl2.length>1) {	
